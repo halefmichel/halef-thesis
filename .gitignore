@@ -48,8 +48,8 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-#JetBrains IDEA
-.idea
+# Jetbrains
+/.idea/
 
 # Mac OS
 .DS_Store
