@@ -6,6 +6,16 @@ import { resolve } from 'path'
 import { getDataByYearRent } from '@/util/historical-urls'
 import { formatDate } from '@/util/dateUtil'
 
+/**
+ * This function extracts data from a webpage and returns an array of objects containing property details.
+ * It uses the Document object model of the webpage to select and extract the required data.
+ * The function maps over each property container on the webpage, extracting details such as link, date, title, address, area, rooms, suite, bathrooms, garage, price, condo, and additional internal data.
+ * The function also records the time of data extraction.
+ *
+ * @param {Document} document - The Document object model of the webpage.
+ * @param {string} pageUrl - The URL of the webpage.
+ * @returns {Promise<Array<Object>>} - A promise that resolves to an array of objects, each containing details of a property.
+ */
 async function extractData(document: Document, pageUrl: string) {
   const containers = Array.from(document.querySelectorAll('.property-card__container'))
   const createAt = new Date()
@@ -29,6 +39,16 @@ async function extractData(document: Document, pageUrl: string) {
   }))
 }
 
+/**
+ * This function extracts internal data from a property listing webpage and returns an object containing the details.
+ * It uses the Document object model of the webpage to select and extract the required data.
+ * The function extracts details such as zone, district, and characteristics of the property.
+ * If there is an error while extracting the data, the function will return an object with undefined values.
+ *
+ * @param {string} url - The URL of the property listing webpage.
+ * @returns {Promise<Object>} - A promise that resolves to an object containing the internal details of a property.
+ * @throws {Error} - Throws an error if there is an issue with reading the HTML of the webpage.
+ */
 async function extractInternalData(url: string) {
   try {
     const document = await readHtml(url)
