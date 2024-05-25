@@ -8,7 +8,7 @@ library(dplyr)
 library(car)
 
 # Carregar os dados
-data <- read.csv("../../resources/clean-data/rent_2018_2023.csv", dec = ",", header = TRUE, sep = ";")
+data <- read.csv("./resources/clean-data/rent_2018_2023.csv", dec = ",", header = TRUE, sep = ";")
 
 # Converter fatores em variáveis dummy
 data$gym <- as.numeric(as.character(data$gym))
