@@ -97,3 +97,27 @@ if (!is.null(results$best_model)) {
 } else {
   cat("Nenhum modelo válido encontrado.\n")
 }
+
+predicted<- predict(results$best_model)
+residuals <- resid(results$best_model)
+stand_predicted <- (predicted - mean(predicted)) / sd(predicted)
+stand_residuals <- (residuals - mean(residuals)) / sd(residuals)
+
+plot(stand_predicted, stand_residuals, main = "Standardized residuals plot", xlab = "Standardized predicted value", ylab = "Standardized residuals")
+
+# Calculate the histogram data without plotting
+hist_data <- hist(stand_residuals, plot = FALSE)
+
+# Calculate the normal distribution density values
+x_values <- seq(min(stand_residuals), max(stand_residuals), length = 100)
+y_values <- dnorm(x_values, mean = mean(stand_residuals), sd = sd(stand_residuals))
+
+# Determine the y-axis limit
+y_max <- max(c(hist_data$density, y_values))
+
+# Plot the histogram with the y-axis limit
+hist(stand_residuals, freq = FALSE, ylim = c(0, y_max),
+     main = "Histogram with Normal Curve", xlab = "Standardized Residuals")
+
+# Add the normal distribution curve
+curve(dnorm(x, mean = mean(stand_residuals), sd = sd(stand_residuals)), add = TRUE, lwd = 2)
