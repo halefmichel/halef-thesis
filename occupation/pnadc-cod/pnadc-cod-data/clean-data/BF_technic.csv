@@ -1,0 +1,361 @@
+PNAD CONTÍNUA _ COD(CÓDIGO),PNAD CONTÍNUA _COD(TÍTULO),avg_teleworkable
+1112,Dirigentes superiores da administração pública,0.75
+1114,Dirigentes de organizações que apresentam um interesse especial,0.9
+1211,Dirigentes financeiros,1
+1212,Dirigentes de recursos humanos,1
+1219,Dirigentes de administração e de serviços não classificados anteriormente,0.75
+1221,Dirigentes de vendas e  comercialização,1
+1222,Dirigentes de publicidade e relações públicas,1
+1223,Dirigentes de pesquisa e desenvolvimento,0.8
+1311,Dirigentes de produção agropecuária e silvicultura,0
+1321,Dirigentes de indústria de transformação,0
+1323,Dirigentes de empresas de construção,0
+1324,"Dirigentes de empresas de abastecimento, distribuição e afins",0.6666666666666666
+1330,Dirigentes de serviços de tecnologia da informação e comunicações,1
+1341,Dirigentes de serviços de cuidados infantis,0
+1342,Dirigentes de serviços de saúde,1
+1344,Dirigentes de serviços de bem-estar social,1
+1345,Dirigentes de serviços de educação,1
+1411,Gerentes de hotéis,0
+1412,Gerentes de restaurantes,0
+1431,"Gerentes de centros esportivos,  de diversão e culturais",0
+2111,Físicos e astrônomos,1
+2112,Meteorologistas,1
+2113,Químicos,0
+2114,Geólogos e geofísicos,1
+2120,"Matemáticos, atuários e estatísticos",1
+2131,"Biólogos, botânicos, zoólogos e afins",0.6666666666666666
+2132,Agrônomos e afins,0
+2133,Profissionais da proteção do meio ambiente,0.7142857142857143
+2141,Engenheiros industriais e de produção,0.5
+2142,Engenheiros civis,1
+2143,Engenheiros de meio ambiente,1
+2144,Engenheiros mecânicos,0.42857142857142855
+2145,Engenheiros químicos,0
+2146,"Engenheiros de minas, metalúrgicos e afins",0.3333333333333333
+2149,Engenheiros não classificados anteriormente,0.4375
+2151,Engenheiros eletricistas,1
+2152,Engenheiros eletrônicos,1
+2161,Arquitetos de edificações,1
+2162,Arquitetos paisagistas,1
+2163,Desenhistas de produtos e  vestuário,1
+2164,Urbanistas e engenheiros de trânsito,0
+2165,Cartógrafos e agrimensores,0.6666666666666666
+2166,Desenhistas gráficos e de multimídia,1
+2211,Médicos gerais,0.06666666666666667
+2212,Médicos especialistas,0.25
+2221,Profissionais de enfermagem,0
+2222,Profissionais de partos,0
+2230,Profissionais da medicina tradicional e alternativa,0
+2240,Paramédicos,0
+2250,Veterinários,0
+2261,Dentistas,0
+2262,Farmacêuticos,0
+2263,Profissionais da saúde e da higiene laboral e ambiental,0
+2264,Fisioterapeutas,0
+2265,Dietistas e nutricionistas,0
+2266,Fonoaudiólogos e logopedistas,0.5
+2267,Optometristas,0
+2269,Profissionais da saúde não classificados anteriormente,0.375
+2310,Professores de universidades e do ensino superior,0.9714285714285714
+2320,Professores de formação profissional,1
+2330,Professores do ensino médio,1
+2341,Professores do ensino fundamental,1
+2342,Professores do ensino pré-escolar,1
+2351,Especialistas em métodos pedagógicos,1
+2352,Educadores para necessidades especiais,0.8
+2353,Outros professores de idiomas,1
+2356,Instrutores em tecnologias da informação,1
+2359,Profissionais de ensino não classificados anteriormente,1
+2411,Contadores,0.75
+2412,Assessores financeiros e em investimentos,1
+2413,Analistas financeiros,1
+2421,Analistas de gestão e administração,1
+2422,Especialistas em políticas de administração,0.8333333333333334
+2423,Especialistas em políticas e serviços de pessoal e afins,1
+2431,Profissionais da publicidade e da comercialização,1
+2432,Profissionais de relações públicas,1
+2433,Profissionais de vendas técnicas e médicas (exclusive tic),1
+2434,Profissionais de vendas de tecnologia da informação e comunicações,1
+2511,Analistas de sistemas,1
+2512,Desenvolvedores de programas e aplicativos (software),1
+2513,Desenvolvedores de páginas de internet (web) e multimídia,1
+2514,Programadores de aplicações,1
+2519,Desenvolvedores e analistas de programas e aplicativos (software) e multimídia não classificados anteriormente,1
+2521,Desenhistas e administradores de bases de dados,1
+2522,Administradores de sistemas,1
+2523,Profissionais em rede de computadores,1
+2529,Especialistas em base de dados e em redes de computadores não classificados anteriormente,1
+2611,Advogados e juristas,1
+2612,Juízes,0.5
+2619,Profissionais em direito não classificados anteriormente,1
+2621,Arquivologistas e curadores de museus,1
+2622,"Bibliotecários, documentaristas e afins",1
+2631,Economistas,1
+2632,"Sociólogos, antropólogos e afins",1
+2633,"Filósofos, historiadores e especialistas em ciência política",0.6666666666666666
+2634,Psicólogos,1
+2635,Assistentes sociais,0.5
+2636,"Ministros de cultos religiosos, missionários e afins",1
+2641,Escritores,1
+2642,Jornalistas,1
+2643,"Tradutores, intérpretes e linguistas",0
+2651,Artistas plásticos,0.5
+2652,"Músicos, cantores e compositores",0.25
+2653,Bailarinos e coreógrafos,0
+2654,"Diretores de cinema, de teatro e afins",0.5714285714285714
+2655,Atores,0
+2656,"Locutores de rádio, televisão e outros meios de comunicação",0.3333333333333333
+3111,Técnicos em ciências físicas e químicas,0.5
+3112,Técnicos em engenharia civil,0.25
+3113,Eletrotécnicos,0
+3115,Técnicos em engenharia mecânica,0
+3118,Desenhistas e projetistas técnicos,1
+3119,Técnicos em ciências físicas e da engenharia não classificados anteriormente,0
+3121,Supervisores da mineração,0
+3122,Supervisores de indústrias de transformação,0
+3131,Operadores de instalações de produção de energia,0
+3132,"Operadores de incineradores, instalações de tratamento de água e afins",0
+3133,Controladores de instalações de processamento de produtos químicos,0
+3134,Operadores de instalações de refino de petróleo e gás natural,0
+3135,Controladores de processos de produção de metais,0
+3139,Técnicos em controle de processos não classificados anteriormente,0
+3141,Técnicos e profissionais de nível médio em ciências biológicas (exclusive da medicina),0
+3142,Técnicos agropecuários,0
+3143,Técnicos florestais,0
+3151,Oficiais maquinistas em navegação,0.5
+3152,"Capitães, oficiais de coberta e práticos",0
+3153,Pilotos de aviação e afins,0
+3154,Controladores de tráfego aéreo,1
+3211,Técnicos em aparelhos de diagnóstico e tratamento médico,0
+3212,Técnicos de laboratórios médicos,0
+3213,Técnicos e assistentes farmacêuticos,0
+3214,Técnicos de próteses médicas e dentárias,0
+3221,Profissionais de nível médio de enfermagem,0
+3222,Profissionais de nível médio de partos,0
+3240,Técnicos e assistentes veterinários,0
+3251,Dentistas auxiliares e ajudantes de odontologia,0
+3252,Técnicos em documentação sanitária,1
+3253,Trabalhadores comunitários da saúde,0
+3254,Técnicos em optometria e ópticos,0
+3255,Técnicos e assistentes fisioterapeutas,0
+3256,assistentes de medicina,0
+3257,"Inspetores de saúde laboral, ambiental e afins",0
+3258,Ajudantes de ambulâncias,0
+3259,Profissionais de nível médio da saúde não classificados anteriormente,0.07692307692307693
+3311,"Agentes e corretores de bolsa, câmbio e outros serviços financeiros",1
+3312,Agentes de empréstimos e financiamento,0.6666666666666666
+3313,Contabilistas e guarda livros,1
+3314,"Profissionais de nível médio de serviços estatísticos, matemáticos e afins",0.8
+3315,Avaliadores,0.8
+3321,Agentes de seguros,1
+3322,Representantes comerciais,1
+3323,Agentes de compras,1
+3324,Corretores de comercialização,1
+3331,Despachantes aduaneiros,0
+3332,Organizadores de conferências e eventos,0
+3333,Agentes de emprego e agenciadores de mão de obra,1
+3334,Agentes imobiliários,0.6666666666666666
+3339,Agentes de serviços comerciais não classificados anteriormente,0.7142857142857143
+3341,Supervisores de secretaria,1
+3342,Secretários jurídicos,1
+3343,Secretários executivos e administrativos,1
+3344,Secretários de medicina,1
+3351,Agentes aduaneiros e inspetores de fronteiras,0.3333333333333333
+3352,Agentes da administração tributária,0
+3353,Agentes de serviços de seguridade social,0
+3354,Agentes de serviços de expedição de licenças e permissões,0.3333333333333333
+3355,Inspetores de polícia e detetives,0.2
+3411,Profissionais de nível médio do direito e serviços legais e afins,0.8333333333333334
+3412,Trabalhadores e assistentes sociais de nível médio,0
+3421,Atletas e esportistas,1
+3422,"Treinadores, instrutores e árbitros de atividades esportivas",0.5
+3423,Instrutores de educação física e atividades recreativas,0.5
+3431,Fotógrafos,1
+3432,Desenhistas e decoradores de interiores,0.6666666666666666
+3433,"Técnicos em galerias de arte, museus e bibliotecas",0.5
+3434,Chefes de cozinha,0
+3435,Outros profissionais de nível médio em atividades culturais e artísticas,0
+3511,Técnicos em operações de tecnologia da informação e das comunicações,1
+3512,Técnicos em assistência ao usuário de tecnologia da informação e das comunicações,1
+3513,Técnicos de redes e sistemas de computadores,1
+3521,Técnicos de radiodifusão e gravação audiovisual,0.8
+4110,Escriturários gerais,1
+4120,Secretários (geral),1
+4131,Operadores de máquinas de processamento de texto e mecanógrafos,1
+4132,Operadores de entrada de dados,1
+4211,Caixas de banco e afins,0
+4212,Coletores de apostas e de jogos,0.2
+4214,Cobradores e afins,0.5
+4221,Trabalhadores de agências de viagem,0
+4222,Trabalhadores de centrais de atendimento,0.3333333333333333
+4223,Telefonistas,0.5
+4224,Recepcionistas de hotéis,0
+4225,Trabalhadores dos serviços de informações,1
+4227,Entrevistadores de pesquisas de mercado,1
+4311,Trabalhadores de contabilidade e cálculo de custos,0.5
+4312,"Trabalhadores de serviços estatísticos, financeiros e de seguros",0.7142857142857143
+4313,Trabalhadores encarregados de folha de pagamento,1
+4321,Trabalhadores de controle de abastecimento e estoques,0.2
+4322,Trabalhadores de serviços de apoio à produção,0
+4323,Trabalhadores de serviços de transporte,1
+4411,Trabalhadores de bibliotecas,0
+4412,Trabalhadores de serviços de correios,0.5
+4413,"Codificadores de dados, revisores de provas de impressão e afins",1
+4414,Outros escreventes,0
+4415,Trabalhadores de arquivos,1
+4416,Trabalhadores do serviço de pessoal,1
+4419,Trabalhadores de apoio administrativo não classificados anteriormente,1
+5111,Auxiliares de serviço de bordo,0
+5113,Guias de turismo,0
+5120,Cozinheiros,0.25
+5131,Garçons,0
+5132,atendentes de bar,0
+5141,Cabeleireiros,0
+5142,Especialistas em tratamento de beleza e afins,0.25
+5151,"Supervisores de manutenção e limpeza de edifícios em escritórios, hotéis e estabelecimentos",0
+5153,Porteiros e zeladores,0
+5163,Trabalhadores de funerárias e embalsamadores,0
+5164,Cuidadores de animais,0
+5169,Trabalhadores de serviços pessoais não classificados anteriormente,0.6666666666666666
+5211,Vendedores de quiosques e postos de mercados,0
+5222,Supervisores de lojas,0
+5223,Balconistas e vendedores de lojas,0
+5230,Caixas e expedidores de bilhetes,0
+5241,"Modelos de moda, arte e publicidade",1
+5242,Demonstradores de lojas,0
+5244,Vendedores por telefone,1
+5245,Frentistas de posto de gasolina,0
+5246,Balconistas dos serviços de alimentação,0
+5249,Vendedores não classificados anteriormente,0
+5311,Cuidadores de crianças,1
+5312,Ajudantes de professores,1
+5321,Trabalhadores de cuidados pessoais em instituições,0
+5322,Trabalhadores de cuidados pessoais a domicílios,0
+5329,Trabalhadores de cuidados pessoais nos serviços de saúde não classificados anteriormente,0
+5411,Bombeiros,0
+5412,Policiais,0
+5413,Guardiões de presídios,0
+5414,Guardas de segurança,0
+5419,Trabalhadores dos serviços de proteção e segurança não classificados anteriormente,0.14285714285714285
+6111,"Agricultores e trabalhadores qualificados em atividades da agricultura (exclusive hortas, viveiros e jardins)",0.2
+6121,Criadores de gado e trabalhadores qualificados da criação de gado,0
+6210,Trabalhadores florestais qualificados e afins,0
+6224,Caçadores,0
+7112,Pedreiros,0
+7113,"Canteiros, cortadores e gravadores de pedras",0
+7114,Trabalhadores em cimento e concreto armado,0
+7115,Carpinteiros,0
+7119,Outros trabalhadores qualificados e operários da construção não classificados anteriormente,0.16666666666666666
+7121,Telhadores,0
+7122,"Aplicadores de revestimentos cerâmicos, pastilhas, pedras e madeiras",0
+7123,Gesseiros,0
+7124,Instaladores de material isolante térmico e acústico,0
+7125,Vidraceiros,0
+7126,Bombeiros e encanadores,0
+7127,Mecânicos-instaladores de sistemas de refrigeração e climatização,0
+7131,Pintores e empapeladores,0
+7132,Lustradores,0
+7211,Moldadores de metal e macheiros,0
+7212,Soldadores e oxicortadores,0
+7213,Chapistas e caldeireiros,0
+7214,Montadores de estruturas metálicas,0
+7215,Aparelhadores e emendadores de cabos,0
+7221,Ferreiros e forjadores,0
+7222,Ferramenteiros e afins,0
+7223,Reguladores e operadores de máquinas-ferramentas,0
+7224,Polidores de metais e afiadores de ferramentas,0
+7231,Mecânicos e reparadores de veículos a motor,0
+7232,Mecânicos e reparadores de motores de avião,0
+7233,Mecânicos e reparadores de máquinas agrícolas e industriais,0
+7234,Reparadores de bicicletas e afins,0
+7311,Mecânicos e reparadores de instrumentos de precisão,0
+7312,Confeccionadores e afinadores de instrumentos musicais,0
+7313,"Joalheiros e lapidadores de gemas, artesãos de metais preciosos e semipreciosos",0.3333333333333333
+7314,Ceramistas e afins (preparação e fabricação),0
+7315,"Cortadores, polidores, jateadores e gravadores de vidros e afins",0
+7316,"Redatores de cartazes, pintores decorativos e gravadores",0.5
+7318,"Artesãos de tecidos, couros e materiais semelhantes",0
+7321,Trabalhadores da pré-impressão gráfica,1
+7322,Impressores,0
+7323,Encadernadores e afins,0
+7411,Eletricistas de obras e afins,0
+7412,Mecânicos e ajustadores eletricistas,0
+7413,Instaladores e reparadores de linhas elétricas,0
+7421,Mecânicos e reparadores em eletrônica,0
+7422,Instaladores e reparadores em tecnologias da informação e comunicações,0
+7511,Magarefes e afins,0
+7512,"Padeiros, confeiteiros e afins",0
+7513,Trabalhadores da pasteurização do leite e fabricação de laticínios e afins,0
+7514,"Trabalhadores da conservação de frutas, legumes e similares",0
+7515,Trabalhadores da degustação e classificação de alimentos e bebidas,0
+7516,Trabalhadores qualificados da preparação do fumo e seus produtos,0
+7521,Trabalhadores de tratamento e preparação da madeira,0
+7522,Marceneiros e afins,0
+7523,Operadores de máquinas de lavrar madeira,0
+7531,"Alfaiates, modistas, chapeleiros e peleteiros",0
+7532,Trabalhadores qualificados da preparação da confecção de roupas,0.5
+7533,"Costureiros, bordadeiros e afins",0
+7534,"Tapeceiros, colchoeiros e afins",0
+7541,Trabalhadores subaquáticos,0
+7542,Dinamitadores e detonadores,0
+7543,Classificadores e provadores de produtos (exceto de bebidas e alimentos),0
+7544,Fumigadores e outros controladores de pragas e ervas daninhas,0
+7549,Outros trabalhadores qualificados e operários da indústria e do artesanato não classificados anteriormente,1
+8111,Mineiros e operadores de máquinas e de instalações em minas e pedreiras,0
+8112,Operadores de instalações de processamento de minerais e rochas,0
+8113,Perfuradores e sondadores de poços e afins,0
+8114,"Operadores de máquinas para fabricar cimento, pedras e outros produtos minerais",0
+8121,Operadores de instalações de processamento de metais,0
+8122,"Operadores de máquinas polidoras, galvanizadoras e recobridoras de metais",0
+8131,Operadores de instalações e máquinas de produtos químicos,0
+8132,Operadores de máquinas para fabricar produtos fotográficos,0
+8141,Operadores de máquinas para fabricar produtos de borracha,0
+8142,Operadores de máquinas para fabricar produtos de material plástico,0
+8143,Operadores de máquinas para fabricar produtos de papel,0
+8151,"Operadores de máquinas de preparação de fibras, fiação e bobinamento de fios",0
+8152,Operadores de teares e outras máquinas de tecelagem,0
+8153,Operadores de máquinas de costura,0
+8154,"Operadores de máquinas de branqueamento, tingimento e limpeza de tecidos",0
+8156,Operadores de máquinas para fabricação de calçados e afins,0
+8157,"Operadores de máquinas de lavar, tingir e passar roupas",0
+8160,Operadores de máquinas para elaborar alimentos e produtos afins,0
+8172,Operadores de instalações para processamento de madeira,0
+8181,Operadores de instalações de vidraria e cerâmica,0
+8182,Operadores de máquinas de vapor e caldeiras,0
+8183,"Operadores de máquinas de embalagem, engarrafamento e etiquetagem",0
+8189,Operadores de máquinas e de instalações fixas não classificados anteriormente,0
+8211,Mecânicos montadores de maquinaria mecânica,0
+8212,Montadores de equipamentos elétricos e eletrônicos,0
+8219,Montadores não classificados anteriormente,0
+8311,Maquinistas de locomotivas,0
+8312,Guarda-freios e agentes de manobras,0
+8322,"Condutores de automóveis, taxis e caminhonetes",0
+8331,Condutores de ônibus e bondes,0
+8332,Condutores de caminhões pesados,0
+8342,Operadores de máquinas de movimentação de terras e afins,0
+8343,"Operadores de guindastes, gruas, aparatos de elevação e afins",0
+8344,Operadores de empilhadeiras,0
+8350,Marinheiros de coberta e afins,0
+9111,Trabalhadores dos serviços domésticos em geral,0
+9112,"Trabalhadores de limpeza de interior de edifícios, escritórios, hotéis e outros estabelecimentos",0
+9121,Lavadeiros de roupas e passadeiros manuais,0
+9129,Outros trabalhadores de limpeza,0
+9211,Trabalhadores elementares da agricultura,0
+9212,Trabalhadores elementares da pecuária,0
+9214,Trabalhadores elementares da jardinagem e horticultura,0
+9215,Trabalhadores florestais elementares,0
+9216,Trabalhadores elementares da pesca e aquicultura,0
+9311,Trabalhadores elementares de minas e pedreiras,0
+9312,"Trabalhadores elementares de obras públicas e da manutenção de estradas, represas e similares",0
+9313,Trabalhadores elementares da construção de edifícios,0
+9321,empacotadores manuais,0
+9329,Trabalhadores elementares da indústria de transformação não classificados anteriormente,0
+9333,Carregadores,0.25
+9411,Preparadores de comidas rápidas,0
+9412,Ajudantes de cozinha,0
+9611,Coletores de lixo e material reciclável,0
+9621,"Mensageiros, carregadores de bagagens e entregadores de encomendas",0
+9622,Pessoas que realizam várias tarefas,0
+9623,Coletores de dinheiro em máquinas automáticas de venda e leitores de medidores,0.5
+9629,Outras ocupações elementares não classificadas anteriormente,0.25
