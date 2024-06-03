@@ -12,4 +12,4 @@ Project that contains the extract and the analysis of the data that will be used
   it in a CSV file.
 
 
-- [Resources](./resources) - are the resources that are used in the project.
+- [Resources](web-scraper/resources) - are the resources that are used in the project.
