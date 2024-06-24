@@ -20,7 +20,6 @@ ORDER BY "Distritos SP", "CBO Ocupação 2002";
 /* Query to get the telework ability in each district of São Paulo city by year and quarter in the years 2018, 2019, 2020 and 2021 */
 select "Distritos SP",
        Ano,
-       Trimestre,
        sum(cast("total de profissionais" as integer))           as total_de_profissionais,
        round(avg(cast(teleworkable_score as real)), 3)          as avg_teleworkable_score,
        round(sum(cast("total de profissionais" as integer) * cast(teleworkable_score as real)) /
@@ -52,5 +51,43 @@ from (SELECT teleworkable_score_COD."Ano",
       WHERE final_translator."CBO CÓDIGO" IS NOT NULL
         AND CBO."total de profissionais" > 0) t
 where Ano IS NOT NULL
-group by "Distritos SP", Ano, Trimestre
-order by "Distritos SP", Ano, Trimestre;
+group by "Distritos SP", Ano
+order by "Distritos SP", Ano;
+
+
+select Ano,
+       month,
+       sum(cast("total" as integer))                   as total_de_profissionais,
+       round(avg(cast(teleworkable_score as real)), 8) as avg_teleworkable_score,
+       round(sum(cast("total" as integer) * cast(teleworkable_score as real)) /
+             sum(cast("total" as integer)), 8)         as weighted_avg_teleworkable_score
+from (SELECT teleworkable_score_COD."Ano",
+             CBO.month,
+             CBO.total,
+             teleworkable_score_COD."teleworkable_score"
+      FROM (SELECT *
+            FROM CBO_2018_monthly
+            union all
+            SELECT *
+            FROM CBO_2019_monthly
+            union all
+            SELECT *
+            FROM CBO_2020_monthly
+            union all
+            SELECT *
+            FROM CBO_2021_monthly) AS CBO
+               LEFT JOIN final_translator ON CBO."id CBO 2002" = final_translator."CBO CÓDIGO"
+               LEFT JOIN teleworkable_score_COD
+                         ON final_translator."PNAD CONTÍNUA _ COD(CÓDIGO)" = teleworkable_score_COD."V4010" AND
+                            teleworkable_score_COD."Ano" = CBO."Year" and CASE
+                                                                              WHEN CBO.month IN (1, 2, 3) THEN 1
+                                                                              WHEN CBO.month IN (4, 5, 6) THEN 2
+                                                                              WHEN CBO.month IN (7, 8, 9) THEN 3
+                                                                              WHEN CBO.month IN (10, 11, 12)
+                                                                                  THEN 4 end =
+                                                                          teleworkable_score_COD."trimestre"
+      WHERE final_translator."CBO CÓDIGO" IS NOT NULL
+        AND CBO.total > 0) t
+where Ano IS NOT NULL
+group by Ano, month
+order by Ano, month;
