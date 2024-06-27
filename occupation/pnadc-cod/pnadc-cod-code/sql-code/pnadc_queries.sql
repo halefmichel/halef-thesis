@@ -13,22 +13,20 @@ SELECT PC.Ano,
        MIN(CASE WHEN PC."S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END) AS S01015_binary,
        MIN(CASE WHEN PC."S01028" = 'Sim' THEN 1 ELSE 0 END)                       AS S01028_binary,
        MIN(CASE WHEN PC."S01029" = 'Sim' THEN 1 ELSE 0 END)                       AS S01029_binary,
-       MIN(CASE WHEN PC."S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END)
-           * MIN(CASE WHEN PC."S01028" = 'Sim' THEN 1 ELSE 0 END)
-           * MIN(CASE WHEN PC."S01029" = 'Sim' THEN 1 ELSE 0 END)                 AS minimum_conditions
-FROM (SELECT *
+       AVG(minimum_conditions)                                                    AS minimum_conditions
+FROM (SELECT *, CASE WHEN "S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END * CASE WHEN "S01028" = 'Sim' THEN 1 ELSE 0 END * CASE WHEN "S01029" = 'Sim' THEN 1 ELSE 0 END AS minimum_conditions
       FROM pnad_continua_2018I1
       UNION ALL
-      SELECT *
+      SELECT *, CASE WHEN "S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END * CASE WHEN "S01028" = 'Sim' THEN 1 ELSE 0 END * CASE WHEN "S01029" = 'Sim' THEN 1 ELSE 0 END AS minimum_conditions
       FROM pnad_continua_2019I1
       UNION ALL
-      SELECT *
+      SELECT *, CASE WHEN "S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END * CASE WHEN "S01028" = 'Sim' THEN 1 ELSE 0 END * CASE WHEN "S01029" = 'Sim' THEN 1 ELSE 0 END AS minimum_conditions
       FROM pnad_continua_2020I1
       UNION ALL
-      SELECT *
+      SELECT *, CASE WHEN "S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END * CASE WHEN "S01028" = 'Sim' THEN 1 ELSE 0 END * CASE WHEN "S01029" = 'Sim' THEN 1 ELSE 0 END AS minimum_conditions
       FROM pnad_continua_2021I1
       UNION ALL
-      SELECT *
+      SELECT *, CASE WHEN "S01015" = 'Diária, em tempo integral' THEN 1 ELSE 0 END * CASE WHEN "S01028" = 'Sim' THEN 1 ELSE 0 END * CASE WHEN "S01029" = 'Sim' THEN 1 ELSE 0 END AS minimum_conditions
       FROM pnad_continua_2022I1) PC
 WHERE PC."V4010" <> 'NA'
 GROUP BY PC.Ano, PC.Trimestre, PC."V4010";

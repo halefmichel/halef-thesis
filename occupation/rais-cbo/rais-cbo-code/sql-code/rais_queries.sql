@@ -55,39 +55,50 @@ group by "Distritos SP", Ano
 order by "Distritos SP", Ano;
 
 
-select Ano,
+select ano,
        month,
-       sum(cast("total" as integer))                   as total_de_profissionais,
-       round(avg(cast(teleworkable_score as real)), 8) as avg_teleworkable_score,
-       round(sum(cast("total" as integer) * cast(teleworkable_score as real)) /
-             sum(cast("total" as integer)), 8)         as weighted_avg_teleworkable_score
+       sum(cast(total as integer))                   as total_de_profissionais,
+       round(avg(cast(teleworkable_score as float)), 8) as avg_teleworkable_score,
+       round(sum(cast(total as integer) * cast(teleworkable_score as real)) /
+             sum(cast(total as integer)), 8)         as weighted_avg_teleworkable_score
 from (SELECT teleworkable_score_COD."Ano",
              CBO.month,
              CBO.total,
              teleworkable_score_COD."teleworkable_score"
       FROM (SELECT *
-            FROM CBO_2018_monthly
+            FROM CBO_2018_monthly_v2
             union all
             SELECT *
-            FROM CBO_2019_monthly
+            FROM CBO_2019_monthly_V2
             union all
             SELECT *
-            FROM CBO_2020_monthly
+            FROM CBO_2020_monthly_v2
             union all
             SELECT *
-            FROM CBO_2021_monthly) AS CBO
+            FROM CBO_2021_monthly_v2) AS CBO
                LEFT JOIN final_translator ON CBO."id CBO 2002" = final_translator."CBO CÓDIGO"
                LEFT JOIN teleworkable_score_COD
-                         ON final_translator."PNAD CONTÍNUA _ COD(CÓDIGO)" = teleworkable_score_COD."V4010" AND
-                            teleworkable_score_COD."Ano" = CBO."Year" and CASE
-                                                                              WHEN CBO.month IN (1, 2, 3) THEN 1
-                                                                              WHEN CBO.month IN (4, 5, 6) THEN 2
-                                                                              WHEN CBO.month IN (7, 8, 9) THEN 3
-                                                                              WHEN CBO.month IN (10, 11, 12)
-                                                                                  THEN 4 end =
-                                                                          teleworkable_score_COD."trimestre"
+                         ON final_translator."PNAD CONTÍNUA _ COD(CÓDIGO)" = teleworkable_score_COD."V4010"
+                             AND teleworkable_score_COD."ano" = CBO."Year"
+                             AND CASE
+                                     WHEN CBO.month IN (1, 2, 3) THEN 1
+                                     WHEN CBO.month IN (4, 5, 6) THEN 2
+                                     WHEN CBO.month IN (7, 8, 9) THEN 3
+                                     WHEN CBO.month IN (10, 11, 12) THEN 4 END = teleworkable_score_COD."trimestre"
       WHERE final_translator."CBO CÓDIGO" IS NOT NULL
         AND CBO.total > 0) t
-where Ano IS NOT NULL
-group by Ano, month
-order by Ano, month;
+where ano IS NOT NULL and month < 12
+group by ano
+order by ano;
+
+select *
+from teleworkable_score_COD;
+
+SELECT count(1), "Mês Desligamento", "Mês Admissão"
+FROM rais_vinc_pub_sp_2018 r
+         JOIN city_lkup c
+              ON r.Município = c.id AND r.Município = 355030 /*Identificador do município de São Paulo capital*/
+--          LEFT JOIN district_lkup d ON r."Distritos SP" = d.id
+--          JOIN occupations_cbo_lkup o ON r."CBO Ocupação 2002" = o.id
+where "CBO Ocupação 2002" = 411010
+group by "Mês Desligamento", "Mês Admissão";
