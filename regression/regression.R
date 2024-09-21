@@ -59,20 +59,20 @@ print(paste("Number of final rows:", nrow(df_filtered)))
 
 
 # Import the commute matrix
-commute_matrix <- read.csv("/Users/halefboukarim/Documents/halef-thesis/occupation/commute_matrix.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
+commute_matrix <- read.csv("../occupation/commute_matrix.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
 
 # Normalize the data by dividing each row by the row sum to get the proportion of commuters
 commute_matrix_normalized <- sweep(commute_matrix, 1, rowSums(commute_matrix), "/")
 
 
 # Import the teleworkability index vector for each year and make it a numeric vector
-teleworkability_index_2018 <- read.csv("/Users/halefboukarim/Documents/halef-thesis/occupation/teleworkability_district_SP_2018.csv", dec = ".", header = TRUE, sep = ",") %>%  as.matrix()
+teleworkability_index_2018 <- read.csv("../occupation/teleworkability_district_SP_2018.csv", dec = ".", header = TRUE, sep = ",") %>%  as.matrix()
 teleworkability_vector_2018 <- as.numeric(teleworkability_index_2018 [,6])
-teleworkability_index_2019 <- read.csv("/Users/halefboukarim/Documents/halef-thesis/occupation/teleworkability_district_SP_2019.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
+teleworkability_index_2019 <- read.csv("../occupation/teleworkability_district_SP_2019.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
 teleworkability_vector_2019 <- as.numeric(teleworkability_index_2019 [,6])
-teleworkability_index_2020 <- read.csv("/Users/halefboukarim/Documents/halef-thesis/occupation/teleworkability_district_SP_2020.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
+teleworkability_index_2020 <- read.csv("../occupation/teleworkability_district_SP_2020.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
 teleworkability_vector_2020 <- as.numeric(teleworkability_index_2020 [,6])
-teleworkability_index_2021 <- read.csv("/Users/halefboukarim/Documents/halef-thesis/occupation/teleworkability_district_SP_2021.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
+teleworkability_index_2021 <- read.csv("../occupation/teleworkability_district_SP_2021.csv", dec = ".", header = TRUE, sep = ",") %>% as.matrix()
 teleworkability_vector_2021 <- as.numeric(teleworkability_index_2021 [,6])
 
 spatial_lag_teleworkability_2018 <- commute_matrix_normalized %*% teleworkability_vector_2018
@@ -212,5 +212,3 @@ print(rs_tests)
 
 reg_durbin <- lagsarlm(params, data = df_filtered, listw = listw, type = "Durbin")
 summary(reg_durbin)
-
-
