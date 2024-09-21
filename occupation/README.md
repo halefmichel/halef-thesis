@@ -15,4 +15,4 @@ A project containing data on socio-demographic indicators.
 3. Files
 - [commute_matrix](./occupation/rais-cbo/final_translator.csv) - This file contains the 2017 Origin-Destination commute matrix, which indicates the number of people commuting between districts in São Paulo using various modes of transportation. Source: Metro SP.
 - [final_translator](./occupation/rais-cbo/final_translator.csv) - This file serves as a translator between the different classifications of occupations used in the source files from this research.
-- teleworkability_district - 
+- teleworkability_district - These files present the teleworkability index by the district using the Dingel and Neiman technique, identified by the column `avg_teleworkability_score`, along with values adjusted by the Barbosa Filho method, labeled as `weighted_avg_teleworkability_score`.
