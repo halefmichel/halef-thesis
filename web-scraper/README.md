@@ -3,7 +3,7 @@
 Project that contains a web scraper that extracts data from a website and saves it in a CSV file.
 The code is extracting data from the [viva real](https://www.vivareal.com.br) website.
 
-### File Structure
+### Folder Structure
 
 1. [rent](./src/rent) - are the entities that represent the data that will be extracted from the website
    for all the rent between 2018 and 2023.
