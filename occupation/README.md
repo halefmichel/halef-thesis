@@ -13,5 +13,6 @@ A project containing data on socio-demographic indicators.
 <br><br>2.2 [rais-cbo-data](./occupation/rais-cbo/rais-cbo-data) - This folder contains files generated from SQL code, featuring various groupings of districts and dates related to occupations.
 
 3. Files
--  [final_translator](./occupation/rais-cbo/final_translator.csv) - 
-- [commute_matrix](./occupation/rais-cbo/final_translator.csv) - 
+- [commute_matrix](./occupation/rais-cbo/final_translator.csv) - This file contains the 2017 Origin-Destination commute matrix, which indicates the number of people commuting between districts in São Paulo using various modes of transportation. Source: Metro SP.
+- [final_translator](./occupation/rais-cbo/final_translator.csv) - This file serves as a translator between the different classifications of occupations used in the source files from this research.
+- teleworkability_district - 
