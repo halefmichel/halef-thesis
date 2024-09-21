@@ -1,10 +1,10 @@
 # Regression
 
-Project that contains the notebook with the analysis of the regression models.
+Project that contains the analysis of the regression models.
 
 ### File structure
 
-1. [draft code](./main/draft_best_model.R) - R code to find the best model for each variable.
-2. [regression analysis](./main/regressions_with_idh.ipynb) - Jupyter notebook with the analysis of the regression
+1. [code/sql](./code/sql) - Folder that contains file with calculation by distritic.
+2. [resources](./resources) - Folder that contains files with rent and sell adds from 2018 and 2021.
    models.
-3. [helper](./main/helper/clean_data.py) - Python code that converts the csv file.
+3. [regression.R](./regression.R) - Spatial Regression code.
