@@ -1,6 +1,6 @@
 # Occupation
 
-A project containing data on socio-demographic indicators.
+Project that contains data on socio-economic indicators.
 
 ### Folder structure
 
